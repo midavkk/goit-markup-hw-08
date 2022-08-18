@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <!-- /* ------------WebStudio------------ */ -->
+        <nav class="header-link">
+          <a href="./index.html" class="logo" lang="en"
+            >Web<span class="logo-text">Studio</span></a
+          >
+          <!-- /* ------------navigation------------ */ -->
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link link">Студия</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__link link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-contacts__link link"
+            >
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./img/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contacts__item">
+            <a href="tel:+380961111111" class="header-contacts__link link">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="box">
+      <section class="section">
+        <!-- /* ------------portfolio------------ */ -->
+        <h1 class="hidden-title">Блок кнопок</h1>
+        <div class="container">
+          <ul class="btn-list">
+            <li class="btn-list__item">
+              <button type="button" class="btn-list__text">Все</button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" class="btn-list__text">Веб-сайты</button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" class="btn-list__text">Приложения</button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" class="btn-list__text">Дизайн</button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" class="btn-list__text">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- /* ------------benefits------------ */ -->
+          <ul class="benefits">
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-21.jpg"
+                    alt="Веб-сайт Проект 1"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title">Технокряк</h2>
+                  <p class="benefits-content__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-22.jpg"
+                    alt="Дизайн Проект 2"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="benefits-content__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-23.jpg"
+                    alt="Приложение Проект 3"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="benefits-content__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-24.jpg"
+                    alt="Маркетинг Проект 4"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="benefits-content__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-25.jpg"
+                    alt="Приложение Проект 5"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="benefits-content__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-26.jpg"
+                    alt="Веб-сайт Проект 6"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="benefits-content__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-27.jpg"
+                    alt="Дизайн Проект 7"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="benefits-content__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-28.jpg"
+                    alt="Маркетинг Проект 8"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="benefits-content__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="benefits-list">
+              <a href="#" class="benefits-list__link benefits-item">
+                <div class="benefits-item__card">
+                  <img
+                    src="./img/img-29.jpg"
+                    alt="Приложение Проект 9"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="benefits-item__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="benefits-list__content benefits-content">
+                  <h2 class="benefits-content__title" lang="en">
+                    Growing Business
+                  </h2>
+                  <p class="benefits-content__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- /* ------------footer------------ */ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contacts">
+          <a href="./index.html" class="logo" lang="en"
+            >Web<span class="logo-footer">Studio</span></a
+          >
+          <address class="address">
+            <div class="footer-content">
+              <ul class="footer-content__list">
+                <li class="footer-contacts__item">
+                  г. Киев, пр-т Леси Украинки, 26
+                </li>
+                <li class="footer-contacts__link">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer-contacts__link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-contacts__link">
+                  <a href="tel:+380961111111" class="footer-contacts__link link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </address>
+        </div>
+        <div class="footer-slogan">
+          <p class="footer-slogan-title">присоединяйтесь</p>
+          <ul class="footer-slogan-list">
+            <li class="footer-slogan-item">
+              <a href="" class="footer-slogan-link">
+                <svg class="footer-slogan-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-slogan-item">
+              <a href="" class="footer-slogan-link">
+                <svg class="footer-slogan-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-slogan-item">
+              <a href="" class="footer-slogan-link">
+                <svg class="footer-slogan-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-slogan-item">
+              <a href="" class="footer-slogan-link">
+                <svg class="footer-slogan-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <form class="footer-subscribe">
+            <label for="footer-subscribe" class="footer-slogan-title"
+              >Подпишитесь на рассылку</label
+            >
+            <input
+              type="text"
+              class="input-footer"
+              name="footer-subscribe"
+              id="footer-subscribe"
+              placeholder="E-mail"
+            />
+            <div class="footer-wrap">
+              <button type="submit" class="btn-footer">
+                Подписаться
+                <svg class="send-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
