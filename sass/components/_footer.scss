@@ -1,0 +1,142 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.footer-content {
+  max-width: 231px;
+  min-height: 81px;
+  margin-top: 20px;
+}
+
+.footer-content__list {
+  list-style-type: none;
+}
+
+.footer-contacts__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--hero-title-color);
+  margin-bottom: 9px;
+}
+
+.footer-contacts__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts__link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-slogan {
+  margin-right: 70px;
+}
+
+.footer-slogan-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-slogan-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer-slogan-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.footer-slogan-link {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--hero-title-color);
+}
+
+.footer-slogan-link:hover,
+.footer-slogan-link:focus {
+  background-color: #2196f3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-newsletter {
+  width: 570px;
+  height: auto;
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-footer {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+}
+
+.footer-wrap {
+  position: relative;
+}
+
+.btn-footer {
+  background-color: #188ce8;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  padding: 10px 10px 10px 29px;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+}
+
+.send-icon {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #ffffff;
+}
