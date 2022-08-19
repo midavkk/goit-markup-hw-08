@@ -152,7 +152,7 @@ textarea {
 }
 
 .check-text {
-  @include font(0, 400, 0, 0);
+  @include font($fw: 400);
   color: #757575;
   // font-weight: 400;
   // font-size: 14px;
@@ -183,7 +183,7 @@ textarea {
 }
 
 .check-terms {
-  @include font(400);
+  @include font($fw: 400);
   // font-weight: 400;
   // font-size: 14px;
   // line-height: 1.71;
