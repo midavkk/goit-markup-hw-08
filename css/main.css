@@ -389,6 +389,9 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-list__item:not(:last-child) {
+  margin-right: 30px;
+}
 @media screen and (min-width: 768px) {
   .team-list__item {
     width: calc((100% - 30px) / 2);
@@ -505,9 +508,44 @@ body {
 
 .btn-list {
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 480px) {
+  .btn-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-list {
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-list {
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .btn-list__item {
+    margin-bottom: 15px;
+  }
+  .btn-list__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-list__item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-list__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .btn-list__text {
@@ -535,10 +573,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-list__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .benefits {
