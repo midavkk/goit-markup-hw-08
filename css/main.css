@@ -583,12 +583,21 @@ body {
   margin-top: -30px;
   margin-left: -30px;
 }
-.benefits .benefits-list {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin-left: var(--typical-margin);
-  margin-top: var(--typical-margin);
+
+.benefits-list {
+  width: 100%;
   max-width: 370px;
-  background: var(--hero-title-color);
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .benefits-list:hover .benefits-item__top-text {
