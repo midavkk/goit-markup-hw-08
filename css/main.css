@@ -207,6 +207,9 @@ body {
 }
 
 .hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -215,17 +218,6 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
-  padding: 200px 0;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--main-title-color);
-  margin-bottom: 50px;
 }
 
 .hero__title {
