@@ -1,6 +1,17 @@
 .team {
   background-color: #f5f4fa;
-  padding: 60px 0;
+}
+
+.team-title {
+  padding-top: 60px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+    margin: 0;
+  }
 }
 
 .team-list {
@@ -26,6 +37,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
+    padding: 94px 0;
   }
 }
 
