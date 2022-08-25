@@ -214,8 +214,9 @@ body {
   max-width: 1600px;
   height: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .hero {
+    width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-mobile.jpg);
   }
 }
@@ -238,6 +239,9 @@ body {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
   color: var(--main-title-color);
   margin-bottom: 50px;
 }
@@ -365,20 +369,31 @@ body {
   height: 100%;
 }
 
-.gallery {
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .gallery {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    display: contents;
+    padding-bottom: 94px;
+  }
+}
+
+.gallery-title {
+  text-align: center;
 }
 
 .gallery-list {
   list-style-type: none;
   display: flex;
-  flex-wrap: nowrap;
-  margin: -15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .gallery-list__item {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin: 15px;
   position: relative;
 }
 
@@ -404,11 +419,7 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  padding-bottom: 60px 0;
-}
-
-.team-title {
-  color: teal;
+  padding: 60px 0;
 }
 
 .team-list {
