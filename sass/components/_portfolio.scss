@@ -5,31 +5,31 @@
 .btn-list {
   list-style-type: none;
   margin-bottom: 40px;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     justify-content: center;
     margin-bottom: 14px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     justify-content: center;
     margin-bottom: 34px;
   }
 }
 
 .btn-list__item {
-  @media screen and (min-width: 480px) {
+  @include mobile {
     margin-bottom: 15px;
     &:not(:last-child) {
       margin-right: 8px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     &:not(:last-child) {
       margin-right: 8px;
     }
