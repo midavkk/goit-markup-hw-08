@@ -245,11 +245,11 @@ body {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  display: inline-block;
+  display: flex;
   width: 100%;
   text-align: center;
   color: var(--main-title-color);
-  margin-bottom: 50px;
+  margin: 50px;
 }
 
 .hero-list {
@@ -264,7 +264,7 @@ body {
   color: var(--hero-title-color);
   text-align: center;
   height: auto;
-  margin-bottom: var(--typical-margin);
+  margin: var(--typical-margin) 0;
 }
 @media screen and (min-width: 480px) {
   .hero-list__title {
