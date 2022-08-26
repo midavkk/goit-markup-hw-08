@@ -206,6 +206,12 @@ body {
   color: var(--hero-title-color);
 }
 
+.hero .container {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
 .hero {
   background-color: #2f303a;
   background-repeat: no-repeat;
