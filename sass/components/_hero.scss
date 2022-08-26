@@ -19,7 +19,7 @@
       ),
       url(../img/hero-bg-mobile.jpg);
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -27,7 +27,7 @@
       ),
       url(../img/hero-bg-tablet.jpg);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -65,13 +65,13 @@
   height: auto;
   margin: var(--typical-margin) 0;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     @include font($fs: 26px, $fw: 900, $lh: 1.62, $ls: 0.06em);
     max-width: 360px;
     padding-top: 118px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font($fs: 44px, $fw: 900, $lh: 1.36, $ls: 0.06em);
     max-width: 696px;
   }
