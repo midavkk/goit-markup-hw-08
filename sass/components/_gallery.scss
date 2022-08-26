@@ -1,9 +1,9 @@
 .gallery {
-  @media screen and (min-width: 480px) {
+  @include mobile {
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: contents;
     padding-bottom: 94px;
   }
