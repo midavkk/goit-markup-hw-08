@@ -3,19 +3,18 @@
   @include desktop {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
   }
 }
 
 .gallery-title {
   padding-top: 60px;
+  margin: 0;
   @include mobile {
     padding-bottom: 30px;
-    margin: 0;
   }
   @include desktop {
     padding-bottom: 50px;
-    margin: 0;
   }
 }
 
