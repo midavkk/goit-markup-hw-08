@@ -51,7 +51,8 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -245,8 +246,6 @@ body {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  display: flex;
-  width: 100%;
   text-align: center;
   color: var(--main-title-color);
   margin: 50px;
@@ -263,18 +262,14 @@ body {
   text-transform: uppercase;
   color: var(--hero-title-color);
   text-align: center;
+  max-width: 360px;
   height: auto;
-  margin: var(--typical-margin) 0;
-}
-@media screen and (min-width: 480px) {
-  .hero-list__title {
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    max-width: 360px;
-    padding-top: 118px;
-  }
+  padding-top: 118px;
+  padding-bottom: var(--typical-margin);
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
 }
 @media screen and (min-width: 1200px) {
   .hero-list__title {
@@ -359,7 +354,7 @@ body {
   margin-bottom: 10px;
   text-align: left;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .about-content__title {
     text-align: center;
   }
@@ -375,20 +370,31 @@ body {
   height: 100%;
 }
 
-@media screen and (min-width: 480px) {
-  .gallery {
-    display: none;
-  }
+.gallery {
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   .gallery {
-    display: contents;
-    padding-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 .gallery-title {
-  text-align: center;
+  padding-top: 60px;
+}
+@media screen and (min-width: 480px) {
+  .gallery-title {
+    padding-bottom: 30px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-title {
+    padding-bottom: 50px;
+    margin: 0;
+  }
 }
 
 .gallery-list {
