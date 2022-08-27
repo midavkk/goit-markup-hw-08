@@ -7,14 +7,15 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
-  @include mobile {
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
-  @include tablet {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
