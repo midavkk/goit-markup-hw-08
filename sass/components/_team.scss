@@ -4,11 +4,11 @@
 
 .team-title {
   padding-top: 60px;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     padding-bottom: 30px;
     margin: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-bottom: 50px;
     margin: 0;
   }
@@ -32,10 +32,10 @@
   // &:not(:last-child) {
   //   margin-right: 30px;
   // }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 90px) / 4);
     padding: 94px 0;
   }
