@@ -1,16 +1,22 @@
 .gallery {
-  @include mobile {
-    display: none;
-  }
-
+  display: none;
   @include desktop {
-    display: contents;
-    padding-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 .gallery-title {
-  text-align: center;
+  padding-top: 60px;
+  @include mobile {
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  @include desktop {
+    padding-bottom: 50px;
+    margin: 0;
+  }
 }
 
 .gallery-list {
