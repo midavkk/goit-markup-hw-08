@@ -9,18 +9,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
-  height: 100%;
-  @media screen and (min-width: 320px) {
-    width: 100%;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/hero-bg-mobile.jpg);
-  }
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-bg-mobile.jpg);
   @include tablet {
-    width: 100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -28,6 +23,8 @@
       url(../img/hero-bg-tablet.jpg);
   }
   @include desktop {
+    max-width: 1600px;
+    height: 100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -39,14 +36,13 @@
 }
 
 .title {
-  @include font($fs: 36px, $lh: 1.17);
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.17;
-  // letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-title-color);
   margin: 50px;
+  @include font($fs: 26px, $fw: 900, $lh: 1.62, $ls: 0.06em);
+  @include desktop {
+    @include font($fs: 44px, $fw: 900, $lh: 1.36, $ls: 0.06em);
+  }
 }
 
 .hero-list {
