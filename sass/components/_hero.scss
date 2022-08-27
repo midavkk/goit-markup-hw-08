@@ -44,8 +44,6 @@
   // font-size: 36px;
   // line-height: 1.17;
   // letter-spacing: 0.03em;
-  display: flex;
-  width: 100%;
   text-align: center;
   color: var(--main-title-color);
   margin: 50px;
@@ -62,14 +60,11 @@
   text-transform: uppercase;
   color: var(--hero-title-color);
   text-align: center;
+  max-width: 360px;
   height: auto;
-  margin: var(--typical-margin) 0;
-
-  @include mobile {
-    @include font($fs: 26px, $fw: 900, $lh: 1.62, $ls: 0.06em);
-    max-width: 360px;
-    padding-top: 118px;
-  }
+  padding-top: 118px;
+  padding-bottom: var(--typical-margin);
+  @include font($fs: 26px, $fw: 900, $lh: 1.62, $ls: 0.06em);
 
   @include desktop {
     @include font($fs: 44px, $fw: 900, $lh: 1.36, $ls: 0.06em);
