@@ -65,6 +65,7 @@
   @include font($fs: 26px, $fw: 900, $lh: 1.62, $ls: 0.06em);
   @include desktop {
     @include font($fs: 44px, $fw: 900, $lh: 1.36, $ls: 0.06em);
+    padding-top: 200px;
   }
 }
 
