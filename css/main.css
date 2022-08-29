@@ -242,6 +242,54 @@ body {
   margin-bottom: 32px;
 }
 
+.mob-menu-contacts {
+  list-style-type: none;
+}
+
+.mob-menu-contacts__item-tel {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-top: 302px;
+}
+
+.mob-menu-contacts__tel {
+  color: var(--accent-color);
+}
+
+.mob-menu-contacts__item-mail {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+}
+
+.mob-menu-soc {
+  list-style-type: none;
+}
+
+.mob-menu-contacts__mail {
+  color: var(--main-text-color);
+}
+
+.mob-menu-soc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  margin-top: 64px;
+  display: flex;
+}
+
+.mob-menu-soc__link {
+  color: var(--accent-color);
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
