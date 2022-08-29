@@ -197,11 +197,22 @@ body {
   fill: #000000;
   background-color: #ffffff;
 }
-.menu-open-btn:hover .menu-open-btn:focus {
-  color: var(--accent-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.menu-close-btn {
+  display: flex;
+  margin-left: auto;
+  border: none;
+  fill: #000000;
+  background-color: #ffffff;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
 }
 
 .logo {
