@@ -137,9 +137,8 @@
 
 .mob-menu-list {
   list-style-type: none;
-  //   display: flex;
-  //   min-width: 294px;
-  //   gap: 50px;
+  display: block;
+  margin-left: 40px;
 }
 
 .mob-menu-list__link {
@@ -161,48 +160,50 @@
 
 .mob-menu-contacts {
   list-style-type: none;
+  display: block;
+  margin-left: 40px;
 }
 
-.mob-menu-contacts__item-tel {
+.mob-menu-contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.mob-menu-contacts__tel {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   margin-top: 302px;
-}
-
-.mob-menu-contacts__tel {
   color: var(--accent-color);
 }
 
-.mob-menu-contacts__item-mail {
+.mob-menu-contacts__mail {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   margin-top: 32px;
-}
-
-.mob-menu-soc {
-  list-style-type: none;
-}
-
-.mob-menu-contacts__mail {
   color: var(--main-text-color);
 }
 
 .mob-menu-soc {
+  list-style-type: none;
+  margin-top: 64px;
+  display: flex;
+  margin-left: 40px;
+}
+
+.mob-menu-soc__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mob-menu-soc__link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  margin-top: 64px;
-  display: flex;
-}
-
-.mob-menu-soc__link {
   color: var(--accent-color);
 }
