@@ -219,6 +219,7 @@ body {
   top: 0;
   left: 0;
   background-color: #ffffff;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   padding: 4px 0;
@@ -298,6 +299,7 @@ body {
 }
 
 .mob-menu-soc__item {
+  margin-bottom: 10px;
   position: relative;
 }
 
