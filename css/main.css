@@ -70,6 +70,13 @@ body {
   }
 }
 
+.menu-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .hidden-title {
   width: 1px;
   height: 1px;
@@ -204,6 +211,7 @@ body {
   border: none;
   fill: #000000;
   background-color: #ffffff;
+  margin-bottom: 4px;
 }
 
 .mob-menu {
@@ -213,6 +221,25 @@ body {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
+  padding: 4px 0;
+}
+
+.mob-menu-list {
+  list-style-type: none;
+}
+
+.mob-menu-list__link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+
+.mob-menu-list__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .logo {
