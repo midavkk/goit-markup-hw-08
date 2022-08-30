@@ -224,10 +224,18 @@ body {
   height: 100vh;
   padding: 4px 0;
 }
+.mob-menu .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
 
 .mob-menu-nav {
   list-style-type: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-left: 40px;
 }
 
@@ -247,9 +255,10 @@ body {
 
 .mob-menu-contacts {
   list-style-type: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-left: 40px;
-  margin-top: 64px;
+  margin-top: 40px;
 }
 
 .mob-menu-contacts__item:not(:last-child) {
