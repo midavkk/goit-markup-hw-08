@@ -1,22 +1,25 @@
-.clients {
-  padding: 94px 0;
-}
+// .clients {
+//   padding: 94px 0;
+// }
 
 .clients-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
+  padding-bottom: 60px;
 }
 
 .clients-list__item {
   width: 170px;
   height: 92px;
-  margin-right: var(--typical-margin);
+  // margin-right: var(--typical-margin);
   border-radius: 4px;
   outline: 1px solid #afb1b8;
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
   &:hover,
   &:focus {
     outline: 1px solid var(--accent-color);
