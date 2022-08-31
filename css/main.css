@@ -918,6 +918,17 @@ body {
   padding: 60px 0;
 }
 
+.footer-box {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .footer-logo {
   display: flex;
   justify-content: center;
@@ -926,7 +937,9 @@ body {
 
 .address {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-content {
@@ -1018,6 +1031,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .footer-subscribe {
@@ -1025,6 +1039,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer-subscribe {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .input-footer {
