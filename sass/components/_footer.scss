@@ -1,31 +1,29 @@
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+  container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+  }
 }
-
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 60px;
-  // align-items: baseline;
-}
-
-// .footer-contacts {
-//   margin: 0 auto;
-// }
 
 .footer-content {
   max-width: 231px;
   min-height: 81px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .footer-content__list {
   list-style-type: none;
-  margin: 0 auto;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 .footer-contacts__item {
@@ -45,10 +43,9 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
-}
-
-.footer-contacts__link:not(:last-child) {
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    padding-bottom: 9px;
+  }
 }
 
 // .footer-slogan {
@@ -69,14 +66,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
-  text-align: left;
 }
 
 .footer-slogan-item {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-slogan-link {
@@ -88,41 +85,38 @@
   align-items: center;
   justify-content: center;
   fill: var(--hero-title-color);
-}
-
-.footer-slogan-link:hover,
-.footer-slogan-link:focus {
-  background-color: #2196f3;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer-newsletter {
-  @include mobile {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  @include tablet {
-    width: calc((100% - 30px) / 2);
-  }
-  @include desktop {
-    width: 570px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // @include tablet {
+  //   width: calc((100% - 30px) / 2);
+  // }
+  // @include desktop {
+  //   width: 570px;
+  //   height: auto;
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 30px;
+  // }
 }
 
 .footer-subscribe {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
 .input-footer {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
