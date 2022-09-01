@@ -67,6 +67,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-bottom: 94px;
   }
 }
 
@@ -75,6 +76,15 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
 }
 
 .hidden-title {
@@ -397,7 +407,7 @@ body {
   }
 }
 
-.title {
+.hero-list__title {
   text-align: center;
   color: var(--main-title-color);
   margin: 50px;
@@ -407,7 +417,7 @@ body {
   letter-spacing: 0.06em;
 }
 @media screen and (min-width: 1200px) {
-  .title {
+  .hero-list__title {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -547,18 +557,12 @@ body {
 }
 
 .gallery-title {
-  padding-top: 60px;
+  padding-bottom: 50px;
   margin: 0;
-}
-@media screen and (min-width: 480px) {
-  .gallery-title {
-    padding-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .gallery-title {
-    padding-bottom: 50px;
-  }
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .gallery-list {
@@ -609,7 +613,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .team-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
     padding-bottom: 50px;
+    padding-top: 94px;
     margin: 0;
   }
 }
@@ -636,7 +646,6 @@ body {
 @media screen and (min-width: 1200px) {
   .team-list__item {
     width: calc((100% - 90px) / 4);
-    padding: 94px 0;
   }
 }
 
