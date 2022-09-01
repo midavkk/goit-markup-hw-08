@@ -1,9 +1,8 @@
-// .clients {
-//   padding: 94px 0;
-// }
-
-.clients-title {
-  margin: 60px 0 30px 0;
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 
 .clients-list {
@@ -12,7 +11,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 60px;
 }
 
 .clients-list__item {
@@ -27,6 +25,10 @@
   }
   @include tablet {
     width: 226px;
+  }
+
+  @include desktop {
+    width: 170px;
   }
 }
 
