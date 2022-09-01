@@ -8,14 +8,9 @@
 }
 
 .gallery-title {
-  padding-top: 60px;
+  padding-bottom: 50px;
   margin: 0;
-  @include mobile {
-    padding-bottom: 30px;
-  }
-  @include desktop {
-    padding-bottom: 50px;
-  }
+  @include font($fs: 36px, $lh: 1.17);
 }
 
 .gallery-list {
