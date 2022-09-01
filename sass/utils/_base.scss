@@ -30,7 +30,19 @@ body {
 
 .title {
   @include font($fs: 36px, $lh: 1.17);
+  text-align: center;
   color: var(--main-title-color);
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  @include desktop {
+    padding-bottom: 50px;
+  }
 }
 
 .hidden-title {
