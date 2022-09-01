@@ -1,5 +1,13 @@
 .about {
-  padding: 60px 0;
+  @include mobile {
+    padding: 60px 0;
+  }
+  @include tablet {
+    padding: 60px 0;
+  }
+  @include desktop {
+    padding: 94px 0;
+  }
 }
 
 .about-list {
@@ -31,14 +39,6 @@
   background: #f5f4fa;
   border-radius: 4px;
 }
-
-// .about-content {
-//   // max-width: 270px;
-// }
-
-// .about-list__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .about-content__title {
   @include font($lh: 1.14);
