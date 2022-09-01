@@ -1,16 +1,17 @@
 .gallery {
   display: none;
+  @include mobile {
+    padding-bottom: 60px;
+  }
+  @include tablet {
+    padding-bottom: 60px;
+  }
   @include desktop {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 94px;
   }
-}
-
-.gallery-title {
-  padding-bottom: 50px;
-  margin: 0;
-  @include font($fs: 36px, $lh: 1.17);
 }
 
 .gallery-list {
