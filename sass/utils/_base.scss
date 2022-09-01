@@ -9,16 +9,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding-bottom: 94px;
-  }
 }
 
 .menu-container {
@@ -32,15 +22,10 @@ body {
   @include font($fs: 36px, $lh: 1.17);
   text-align: center;
   color: var(--main-title-color);
-  @include mobile {
-    padding-top: 60px;
+  @media screen and (max-width: 1200px) {
     padding-bottom: 30px;
   }
-  @include tablet {
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     padding-bottom: 50px;
   }
 }
