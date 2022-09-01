@@ -1,21 +1,9 @@
 .team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #f5f4fa;
   padding-bottom: 60px;
-}
-
-.team-title {
-  padding-top: 60px;
-  @include mobile {
-    padding-bottom: 30px;
-    margin: 0;
-  }
-  @include desktop {
-    @include font($fs: 36px, $lh: 1.17);
-    color: var(--main-title-color);
-    padding-bottom: 50px;
-    padding-top: 94px;
-    margin: 0;
-  }
 }
 
 .team-list {
