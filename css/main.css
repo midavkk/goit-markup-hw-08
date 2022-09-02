@@ -744,6 +744,7 @@ body {
 @media screen and (min-width: 1200px) {
   .clients-list__item {
     width: calc((100% - 150px) / 6);
+    max-width: 170px;
   }
 }
 
