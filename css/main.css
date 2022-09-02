@@ -788,10 +788,13 @@ body {
 
 .btn-list__top {
   display: flex;
+  flex-wrap: nowrap;
+  margin-right: 8px;
 }
 
 .btn-list__bottom {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .btn-list__item {
@@ -853,7 +856,6 @@ body {
 }
 
 .benefits-list {
-  width: 100%;
   max-width: 370px;
   display: flex;
   flex-direction: column;
