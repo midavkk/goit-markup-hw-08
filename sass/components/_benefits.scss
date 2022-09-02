@@ -4,21 +4,20 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-top: -30px;
-  // margin-left: -30px;
-  // .benefits-list {
-  //   flex-basis: calc(100% / 3 - 30px);
-  //   margin-left: var(--typical-margin);
-  //   margin-top: var(--typical-margin);
-  //   max-width: 370px;
-  //   background: var(--hero-title-color);
-  // }
+  @include mobile {
+    margin-top: 25px;
+  }
+  @include tablet {
+    margin-top: 14px;
+  }
+  @include desktop {
+    margin-top: 34px;
+  }
 }
 
 .benefits-list {
   width: 100%;
   max-width: 370px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   height: 100%;
