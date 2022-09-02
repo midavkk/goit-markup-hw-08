@@ -1036,11 +1036,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .footer-slogan-title {
-    text-align: left;
+    justify-content: flex-start;
   }
 }
 
@@ -1075,7 +1076,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-newsletter {
-    width: 450px;
+    flex-wrap: nowrap;
+    width: 358px;
     height: auto;
     display: flex;
   }
@@ -1096,8 +1098,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
-    margin: 0;
-    display: flex;
+    justify-content: flex-start;
   }
 }
 
