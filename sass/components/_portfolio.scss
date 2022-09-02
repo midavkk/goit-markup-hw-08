@@ -18,10 +18,13 @@
 }
 .btn-list__top {
   display: flex;
+  flex-wrap: nowrap;
+  margin-right: 8px;
 }
 
 .btn-list__bottom {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .btn-list__item {
