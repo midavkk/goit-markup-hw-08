@@ -95,9 +95,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   @include desktop {
-    text-align: left;
+    justify-content: flex-start;
   }
 }
 
@@ -131,7 +132,8 @@
   flex-direction: column;
   justify-content: center;
   @include desktop {
-    width: 450px;
+    flex-wrap: nowrap;
+    width: 358px;
     height: auto;
     display: flex;
   }
@@ -148,8 +150,7 @@
     margin-right: auto;
   }
   @include desktop {
-    margin: 0;
-    display: flex;
+    justify-content: flex-start;
   }
 }
 
