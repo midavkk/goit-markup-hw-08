@@ -110,36 +110,49 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
-  width: 100%;
+.top-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
-  .header-container {
+  .top-header {
     height: 60px;
   }
 }
 @media screen and (min-width: 768px) {
-  .header-container {
+  .top-header {
     height: 80px;
   }
 }
 
 .navigation {
   display: flex;
-  flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
   .navigation {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    width: 294px;
+  }
+}
 
 .nav-list {
   display: flex;
-  gap: 50px;
+}
+@media screen and (min-width: 480px) {
+  .nav-list {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-list {
+    gap: 50px;
+  }
 }
 
 .nav-list__link {
@@ -153,7 +166,6 @@ body {
   color: var(--main-title-color);
   padding: 32px 0;
   display: flex;
-  justify-content: space-between;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -184,10 +196,9 @@ body {
 }
 
 .header-contacts {
-  list-style-type: none;
   display: flex;
+  max-width: 161px;
   flex-wrap: wrap;
-  max-width: 138px;
   gap: 10px;
 }
 @media screen and (max-width: 480px) {
@@ -195,13 +206,23 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    max-width: 333px;
+    flex-direction: row;
+  }
+}
+
+.header-contacts__item {
+  display: flex;
+}
 
 .header-contacts__link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   display: flex;
@@ -229,6 +250,12 @@ body {
   justify-content: center;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.top-header-mob-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .menu-open-btn {
@@ -268,7 +295,7 @@ body {
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .mob-menu .menu-container {
   display: flex;
@@ -397,6 +424,7 @@ body {
 
 .header-link {
   display: flex;
+  justify-content: space-around;
 }
 
 .logo-text {
