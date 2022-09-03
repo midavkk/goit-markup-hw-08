@@ -60,10 +60,6 @@
 
 .form-title {
   @include font($fs: 20px, $lh: 1.15);
-  // font-weight: 700;
-  // font-size: 20px;
-  // line-height: 1.15;
-  // letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -98,10 +94,6 @@
 
 .form-group input::placeholder {
   @include font($fw: 400, $lh: 1.14, $ls: 0.01em);
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -154,10 +146,6 @@ textarea {
 .check-text {
   @include font($fw: 400);
   color: #757575;
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   margin-right: 4px;
@@ -184,10 +172,6 @@ textarea {
 
 .check-terms {
   @include font($fw: 400);
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
 }
