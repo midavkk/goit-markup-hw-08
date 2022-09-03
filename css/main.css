@@ -106,35 +106,39 @@ body {
   margin: -1px;
 }
 
-.header .container {
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  width: 100%;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  justify-content: space-between;
 }
-@media screen and (max-width: 480px) {
-  .header .container {
+@media screen and (max-width: 767px) {
+  .header-container {
     height: 60px;
   }
 }
 @media screen and (min-width: 768px) {
-  .header .container {
+  .header-container {
     height: 80px;
   }
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  display: none;
+}
+@media screen and (max-width: 480px) {
+  .navigation {
+    display: none;
+  }
 }
 
 .nav-list {
   display: flex;
-  min-width: 294px;
   gap: 50px;
 }
 
@@ -149,11 +153,13 @@ body {
   color: var(--main-title-color);
   padding: 32px 0;
   display: flex;
+  justify-content: space-between;
   position: relative;
 }
 
 .nav-list__item {
   list-style-type: none;
+  display: flex;
 }
 
 .nav-list__link.current::after {
@@ -168,26 +174,27 @@ body {
 }
 
 .header-contacts {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  max-width: 138px;
   gap: 10px;
-  display: none;
+}
+@media screen and (max-width: 480px) {
+  .header-contacts {
+    display: none;
+  }
 }
 
 .header-contacts__link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   display: flex;
-}
-
-.header-contacts {
-  list-style-type: none;
 }
 
 .header-contacts__link .link:hover,
@@ -225,12 +232,12 @@ body {
   fill: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@media (max-width: 768px) {
-  .menu {
+@media (min-width: 481px) {
+  .menu-open-btn {
     display: none;
   }
 }
+
 .menu-close-btn {
   display: flex;
   margin-left: auto;
@@ -356,11 +363,21 @@ body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   color: var(--accent-color);
   display: flex;
-  margin-right: 0 auto;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .header-link {
