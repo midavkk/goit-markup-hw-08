@@ -6,7 +6,6 @@
 }
 
 .btn-list {
-  list-style-type: none;
   display: flex;
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
@@ -16,19 +15,20 @@
     justify-content: center;
   }
 }
-.btn-list__top {
+
+.btn-list__top-list {
+  list-style: none;
   display: flex;
-  flex-wrap: nowrap;
-  margin-right: 8px;
+  flex-direction: row;
 }
 
-.btn-list__bottom {
+.btn-list__bottom-list {
+  list-style: none;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .btn-list__item {
-  display: flex;
   margin-bottom: 15px;
   &:not(:last-child) {
     margin-right: 8px;
