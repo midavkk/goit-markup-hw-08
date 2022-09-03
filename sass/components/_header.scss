@@ -41,15 +41,17 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  @media screen and (max-width: 767px) {
+    padding: 22px 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+  }
 }
 
 .nav-list__item {
   list-style-type: none;
   display: flex;
-
-  // &:not(:last-child) {
-  //   margin-right: 50px;
-  // }
 }
 
 .nav-list__link.current::after {
