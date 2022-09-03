@@ -7,6 +7,9 @@
   color: var(--accent-color);
   display: flex;
   align-items: center;
+  @include mobile {
+    margin-right: 10px;
+  }
   @include tablet {
     margin-right: 88px;
   }
