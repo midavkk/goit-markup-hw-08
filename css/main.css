@@ -143,15 +143,11 @@ body {
 }
 
 .navigation {
-  display: flex;
-}
-@media screen and (max-width: 768px) {
-  .navigation {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .navigation {
+    display: flex;
     width: 294px;
   }
 }
@@ -211,14 +207,14 @@ body {
 }
 
 .header-contacts {
-  display: flex;
-  max-width: 161px;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-contacts {
-    display: none;
+    display: flex;
+    max-width: 161px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
