@@ -1,18 +1,19 @@
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-box {
   flex-wrap: wrap;
+  display: flex;
   justify-content: space-around;
   @include tablet {
-    display: flex;
     flex-wrap: wrap;
   }
   @include desktop {
-    display: flex;
-    justify-content: space-around;
+    flex-wrap: nowrap;
     align-items: baseline;
   }
 }
@@ -138,9 +139,8 @@
   flex-direction: column;
   justify-content: center;
   @include desktop {
-    width: 358px;
-    height: auto;
-    display: flex;
+    width: 570px;
+    justify-content: space-around;
   }
 }
 
@@ -159,6 +159,7 @@
     margin-right: auto;
   }
   @include desktop {
+    width: 570px;
     justify-content: flex-start;
   }
 }
