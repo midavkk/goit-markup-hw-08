@@ -1,13 +1,19 @@
 .gallery {
   display: none;
+  margin-bottom: 94px;
   @include desktop {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 94px;
   }
 }
 
+.gallery-title {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
 .gallery-list {
   list-style-type: none;
   display: flex;
@@ -22,10 +28,6 @@
 
 .gallery-list__label {
   @include font($lh: 1.14);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
