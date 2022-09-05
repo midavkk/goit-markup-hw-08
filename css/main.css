@@ -944,19 +944,19 @@ body {
 }
 
 .benefits-list {
-  max-width: 370px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .benefits-list {
-    width: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits-list {
-    width: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
