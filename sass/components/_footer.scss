@@ -19,11 +19,14 @@
 
 .footer-logo {
   display: flex;
-  justify-content: center;
   margin-bottom: 20px;
   @include desktop {
     justify-content: start;
   }
+}
+
+.footer-logo-text {
+  margin: 0 auto;
 }
 
 .address {
