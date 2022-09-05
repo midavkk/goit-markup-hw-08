@@ -553,12 +553,12 @@ body {
 
 @media screen and (max-width: 1200px) {
   .about {
-    padding: 60px 0;
+    margin: 60px 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 94px 0;
+    margin: 94px 0;
   }
 }
 
@@ -625,14 +625,21 @@ body {
 
 .gallery {
   display: none;
+  margin-bottom: 94px;
 }
 @media screen and (min-width: 1200px) {
   .gallery {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 94px;
   }
+}
+
+.gallery-title {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .gallery-list {
