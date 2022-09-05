@@ -171,6 +171,9 @@
   @include desktop {
     max-width: 358px;
   }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 }
 
 .footer-wrap {
