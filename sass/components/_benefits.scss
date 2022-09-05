@@ -15,12 +15,9 @@
 }
 
 .benefits-list {
-  // max-width: 370px;
-  // height: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 30px;
   @include tablet {
     flex-basis: calc((100% - 30px) / 2);
   }
