@@ -1,6 +1,5 @@
 .team {
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   background-color: #f5f4fa;
@@ -11,6 +10,7 @@
     padding: 94px 0;
   }
 }
+
 .team-title {
   display: flex;
   text-align: center;
