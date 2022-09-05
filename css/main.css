@@ -1012,22 +1012,23 @@ body {
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-box {
   flex-wrap: wrap;
+  display: flex;
   justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
   .footer-box {
-    display: flex;
     flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-box {
-    display: flex;
-    justify-content: space-around;
+    flex-wrap: nowrap;
     align-items: baseline;
   }
 }
@@ -1162,9 +1163,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-newsletter {
-    width: 358px;
-    height: auto;
-    display: flex;
+    width: 570px;
+    justify-content: space-around;
   }
 }
 
@@ -1187,6 +1187,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
+    width: 570px;
     justify-content: flex-start;
   }
 }
