@@ -1045,6 +1045,11 @@ body {
 .footer-logo-text {
   margin: 0 auto;
 }
+@media screen and (min-width: 1200px) {
+  .footer-logo-text {
+    margin: 0;
+  }
+}
 
 .address {
   display: flex;
@@ -1157,11 +1162,14 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-newsletter {
-    flex-wrap: nowrap;
     width: 358px;
     height: auto;
     display: flex;
   }
+}
+
+.footer-newsletter-list {
+  display: flex;
 }
 
 .footer-subscribe {
@@ -1180,6 +1188,24 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
     justify-content: flex-start;
+  }
+}
+
+.footer-newsletter-input {
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .footer-newsletter-input {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-newsletter-input {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 12px;
   }
 }
 
@@ -1215,6 +1241,7 @@ body {
 }
 
 .btn-footer {
+  display: flex;
   background-color: #188ce8;
   color: #ffffff;
   width: 200px;
@@ -1225,7 +1252,6 @@ body {
   padding: 10px 10px 10px 29px;
   border: none;
   border-radius: 4px;
-  display: flex;
 }
 
 .send-icon {
