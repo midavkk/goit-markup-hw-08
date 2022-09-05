@@ -16,11 +16,9 @@
 }
 
 .navigation {
-  display: flex;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-  @include tablet {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
     width: 294px;
   }
 }
@@ -72,12 +70,12 @@
 }
 
 .header-contacts {
-  display: flex;
-  max-width: 161px;
-  flex-wrap: wrap;
-  gap: 10px;
-  @media screen and (max-width: 768px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 161px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   @include desktop {
     max-width: 333px;
