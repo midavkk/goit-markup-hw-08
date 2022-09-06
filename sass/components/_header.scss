@@ -80,6 +80,7 @@
   @include desktop {
     max-width: 333px;
     flex-direction: row;
+    gap: 30px;
   }
 }
 
