@@ -20,6 +20,10 @@
 
 .about-list__item {
   width: 100%;
+  @include mobile {
+    width: 450px;
+    height: auto;
+  }
   @include tablet {
     width: calc((100% - 30px) / 2);
   }
@@ -39,26 +43,18 @@
 
 .about-content__title {
   @include font($lh: 1.14);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: calc(16 / 14);
-  // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-top: 30px;
   margin-bottom: 10px;
-  text-align: left;
-  @include mobile {
-    text-align: center;
+  text-align: center;
+  @include tablet {
+    text-align: left;
   }
 }
 
 .about-content__text {
-  @include font(400);
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
+  @include font($fw: 400);
   color: var(--main-text-color);
   min-width: 270px;
   height: 100%;
