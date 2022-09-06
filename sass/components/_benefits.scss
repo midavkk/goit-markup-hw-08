@@ -3,6 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
   @include mobile {
     margin-top: 25px;
   }
@@ -17,12 +20,17 @@
 .benefits-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  width: 100%;
+  @include mobile {
+    width: 450px;
+  }
   @include tablet {
     flex-basis: calc((100% - 30px) / 2);
+    height: 100%;
   }
   @include desktop {
     flex-basis: calc((100% - 90px) / 3);
+    height: 100%;
   }
 }
 
@@ -33,13 +41,15 @@
 
 .benefits-item__card {
   display: flex;
-  flex-grow: 1;
   position: relative;
   overflow: hidden;
 }
 
 .benefits-item__top-text {
   @include font(18px, 400, 1.56);
+  @media screen and (max-width: 350px) {
+    font-size: 16px;
+  }
   font-family: "Roboto";
   font-style: normal;
   position: absolute;
@@ -79,21 +89,21 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  display: flex;
+  flex-grow: 1;
 }
 
 .benefits-content__title {
   @include font(18px, 700, 2, 0.06em);
   color: var(--main-title-color);
   margin-bottom: 4px;
+  display: flex;
 }
 
 .benefits-content__text {
   @include font(16px, 400, 1.88);
-  // font-weight: 400;
-  // font-size: 16px;
-  // line-height: 1.88;
-  // letter-spacing: 0.03em;
   color: var(--main-text-color);
+  display: flex;
 }
 
 .current {
