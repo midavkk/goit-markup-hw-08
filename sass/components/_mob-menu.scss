@@ -86,8 +86,9 @@
   letter-spacing: 0.02em;
   margin-top: 302px;
   color: var(--accent-color);
-  display: block;
-  white-space: nowrap;
+  @media screen and (max-width: 370px) {
+    font-size: 1.5rem;
+  }
 }
 
 .mob-menu-contacts__mail {
